@@ -21,7 +21,7 @@ do
     if [ "$verdict" -eq 0 ]; then
       echo "Hash was identified as clean. Verdict Code: "$verdict
       echo $hash >> cleanhashes.txt
-    elif [ "$verdict" -eq -100 ] || [ "$verdict" -eq -101 ] || [ "$verdict" -eq -102 ] || [ "$verdict" -eq -103 ] || [ "$verdict" -eq -104 ]; then
+    elif [ "$verdict" -eq -100 ] || [ "$verdict" -eq -101 ] || [ "$verdict" -eq -102 ] || [ "$verdict" -eq -103 ]; then
       echo "Hash was not found in Wildfire database, unknown verdict. Verdict Code: "$verdict
       echo $hash >> unknownhashes.txt
     else
