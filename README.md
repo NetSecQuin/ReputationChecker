@@ -17,7 +17,7 @@ grep -o -E '\b[0-9a-fA-F]\{64\}\b' </home/username/example.txt> | sort -u > uniq
 
 ### Verdicts 
 
-The wildfire reputation checker utalizes a curl request to the get/verdicts API. It responds with an analysis of clean, malicious or unknown, however it will also output a verdict code for a more detailed description of the anaylsis. 
+The wildfire reputation checker utalizes a curl request to the get/verdicts API. The script is programmed to responds with an analysis of clean, malicious or unknown, however it will also output a verdict code for a more detailed description of the anaylsis. 
 These verdict codes can be explained as below:
 
 ```
